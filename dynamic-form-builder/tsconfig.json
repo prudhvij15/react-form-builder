@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "CommonJS",
+      "jsx": "react",
+      "outDir": "./dist",            // Output to the dist folder
+      "declaration": true,           // Generate .d.ts files
+      "declarationDir": "./dist",    // Output declaration files in the dist folder
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "include": [
+      "src/**/*.ts",  // Include all TypeScript files
+      "src/**/*.tsx", // Include React JSX/TSX files
+        "src/**/*.css"  ,
+        // "dist/**/*" // Optionally include all files in the src directory (just to be sure)
+    ],
+    "exclude": [
+      "node_modules",
+      "**/*.spec.ts",  // Exclude test files
+      "examples",      // Exclude example folder
+            // Exclude dist from being included in the build
+    ]
+  }
+  
